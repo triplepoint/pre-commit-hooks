@@ -4,4 +4,4 @@
     description: Verify that .yml files with "vault" in their name are encrypted.
     entry: pre_commit_hooks/ansible_vault_encrypted.sh
     language: script
-    files: '^.*vault.*\.(yml|yaml)$'
+    files: '^.*vault.*\.(yml|yaml)(\.j2){0,1}$'
